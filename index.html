@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- START Title Header -->
+    <div id="top-span"><center>
+        <h1>Huckerberg</h1>
+        <h5>Building friend groups of digital content since 2023</h5>
+    </div></center>
+    <!-- END Title Header -->
+    <p>
+        Here we are.
+    </p>
+    
+
+    <!-- START AUDIO PLAYER -->
+    <!-- START AUDIO PLAYER -->
+    <!-- START AUDIO PLAYER -->
+    <audio id="audio" controls style="display:none">
+        <source src="misc/rick-rubin-interviews-john-mayer.m4a#t=00:03:26"
+                type="audio/mpeg">
+    </audio>
+    <button id="btn">Hello</button>
+    <script>
+        document.getElementById('btn').onclick = function(){
+        //Getting button and listning for click
+            document.getElementById('audio').play();
+            //Utilizing the HTML Audio/Video DOM Reference to play audio/video
+        }
+
+        //to play on the key A do this(using Jquery):
+        document.addEventListener('keydown', function(e) {
+        if(e.keyCode == 13){
+        document.getElementById('audio').play();
+        }
+        });
+    </script>
+    
+    <!-- END AUDIO PLAYER -->
+    <!-- END AUDIO PLAYER -->
+    <!-- END AUDIO PLAYER -->
+    <img src="" id="rainbow">
+    <script>
+        console.log('about to fetch a rainbow.');
+        fetch('rainbow.jpg').then(response => {
+            console.log(response)
+        });
+    </script>
+    <!--
+    <script>
+        getdata();
+
+        async function getdata() {
+            const response = await fetch('podcast-training-data.csv');
+            const data = await response.text();
+            console.log(data)
+        }
+    </script>
+        -->
+</body>
+</html>
